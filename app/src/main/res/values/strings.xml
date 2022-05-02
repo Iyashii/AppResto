@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppResto</string>
+    <string name="server">http://10.15.12.18/</string>
+    <string name="location_api">TC5/ProjetResto/getAllRestoJSON.php</string>
+    <string name="btnReserver">Reserver</string>
+    <string name="btnListe">Liste</string>
+    <!-- Sync Preferences -->
+    <string name="btnEnregistrerReservation">M</string>
+</resources>
