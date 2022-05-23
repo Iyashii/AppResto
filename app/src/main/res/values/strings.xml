@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppResto</string>
+    <string name="app_name">Réservation Restaurant</string>
     <string name="server">http://192.168.1.23/</string>
     <string name="location_api">TC5/ProjetResto/getAllRestoJSON.php</string>
     <string name="btnReserver">Reserver</string>
