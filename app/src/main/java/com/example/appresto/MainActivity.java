@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
         OkHttpClient httpclient = new OkHttpClient();
 
         //prépare la requête
-        //Request requestClients = new Request.Builder().url(getString(R.string.server) + getString(R.string.location_api)).build();
-        Request requestClients = new Request.Builder().url("http://10.15.12.18/TC5/ProjetResto/getAllRestoJSON.php").build();
+        Request requestClients = new Request.Builder().url("http://172.20.10.4/TC5/ProjetResto/getAllRestoJSON.php").build();
 
         httpclient.newCall(requestClients).enqueue(new Callback() {
             @Override
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                                 Log.i("restaurant", num + nomR + " " +villeR+" "); //message qui apparait dans la console pour vérifier
                                 // TO DO
                                 Resto c = new Resto(num, nomR, villeR);
-                                //on ajoute le client à la collection lesClients
+                                //on ajoute le resto à la collection lesClients
                                 lesRestos.add(c);
                             }
 

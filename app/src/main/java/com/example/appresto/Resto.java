@@ -18,7 +18,7 @@ public class Resto {
 
 
     public String toString() {
-        return nomR + villeR;
+        return nomR + "   " + villeR;
     }
 
     public String getNomR() {

@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">AppResto</string>
-    <string name="server">http://10.15.12.18/</string>
+    <string name="server">http://192.168.1.23/</string>
     <string name="location_api">TC5/ProjetResto/getAllRestoJSON.php</string>
     <string name="btnReserver">Reserver</string>
     <string name="btnListe">Liste</string>
+    <string name="textViewNomResto">Liste</string>
+    <string name="textViewAdresse">Liste</string>
+    <string name="textViewDescR">Liste</string>
+    <string name="textViewHoraire">Liste</string>
+    <string name="editTextNomprenommodif">Liste</string>
+    <string name="editTexteNbPersonnemodif">Liste</string>
+    <string name="editTextTelmodif">Liste</string>
+    <string name="editTextDate">Liste</string>
+    <string name="editTextHoraire">Liste</string>
+
+
+
     <!-- Sync Preferences -->
-    <string name="btnEnregistrerReservation">M</string>
+    <string name="btnEnregistrerReservation">Valider</string>
 </resources>

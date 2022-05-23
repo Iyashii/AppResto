@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailResto">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,12 +17,7 @@
             android:id="@+id/textViewNomResto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Détails des restaurants!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.092" />
+            android:text="Détails des restaurants!" />
 
         <TextView
             android:id="@+id/textViewAdresse"
@@ -43,7 +39,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Horaire" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
         <Button
             android:id="@+id/btnReserver"
             android:layout_width="wrap_content"
@@ -59,21 +59,49 @@
             android:text="Revenir à la liste" />
 
     </LinearLayout>
-    <LinearLayout
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/editTexteNbPersonnemodif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nombre de personne"
+            android:visibility="invisible" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextNomprenommodif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:hint="Nom prenom "
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTextTelmodif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:visibility="invisible"
-            android:hint="email modifié" />
+            android:hint="Téléphone" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:visibility="invisible"
+            android:hint="Date choisis" />
 
         <EditText
             android:id="@+id/editTextHoraire"
@@ -85,11 +113,12 @@
             android:hint="Horaire choisis" />
 
         <Button
-            android:id="@+id/btnValider"
+            android:id="@+id/btnEnregistrerReservation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:visibility="invisible"
             android:text="Valider" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
